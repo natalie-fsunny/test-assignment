@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Header } from "../components";
 import { Button, Input, Logo } from "../UI";
 import { Icon } from "../UI";
 import { icons } from "../UI/Icon/utils";
@@ -11,6 +12,7 @@ export const ComponentsExample = () => {
 
   return (
     <div>
+      <Header />
       <Logo />
       <div>
         {icons.map((icon) => (

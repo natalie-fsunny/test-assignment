@@ -15,14 +15,11 @@ interface Props {
 
 export const Button: React.FC<Props> = ({
   children,
-  onMouseEnter,
-  onMouseLeave,
-  onMouseDown,
-  onMouseUp,
   disabled = false,
   error = false,
   type = "button",
   variant = "default",
+  ...props
 }) => {
   return (
     <button
@@ -37,10 +34,7 @@ export const Button: React.FC<Props> = ({
         " " +
         (error ? s.error : "")
       }
-      onMouseDown={onMouseDown}
-      onMouseUp={onMouseUp}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
+      {...props}
     >
       {children}
     </button>

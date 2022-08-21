@@ -1,0 +1,88 @@
+@import "../../styles/style.scss";
+
+.header {
+  font-weight: $fw-semi-bold;
+  color: $grey-text;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @include laptop-desktop {
+    font-size: $button2-desktop-tablet;
+    height: 100px;
+  }
+  @include tablet {
+    height: 80px;
+  }
+  @include mobile {
+    height: 60px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  @include laptop-desktop {
+    margin: 0 165px;
+    width: 100%;
+  }
+  @include mobile-tablet {
+    justify-content: space-between;
+    margin: 0 16px;
+    width: 100%;
+  }
+}
+
+.menus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include mobile-tablet {
+    display: none;
+  }
+}
+
+.first {
+  margin-left: 124px;
+}
+
+.second {
+  margin-right: 150px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.activeMenuItem {
+  color: $dark-text;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 23px;
+    border: 3px solid $red-main;
+    width: 100%;
+    background-color: $red-main;
+    border-radius: 10px;
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  @include mobile-tablet {
+    display: none;
+  }
+}
+
+.hamburger {
+  @include laptop-desktop {
+    display: none;
+  }
+}
