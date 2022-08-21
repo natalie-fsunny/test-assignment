@@ -1,0 +1,20 @@
+@import "../../styles/style.scss";
+
+.logo {
+  @include desktop {
+    width: 146px;
+    height: 40px;
+  }
+  @include laptop {
+    width: 132px;
+    height: 36px;
+  }
+  @include tablet {
+    width: 115px;
+    height: 32px;
+  }
+  @include mobile {
+    width: 104px;
+    height: 28px;
+  }
+}
