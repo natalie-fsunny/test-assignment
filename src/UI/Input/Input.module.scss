@@ -1,0 +1,33 @@
+@import "../../styles/style.scss";
+
+.input {
+  font-size: $body2-desktop-tablet;
+  border: 2px solid $blue-m-input-stroke;
+  padding: 16.5px 24px;
+  border-radius: 10px;
+  font-weight: $fw-semi-bold;
+  outline: none;
+  transition: all ease-in-out 0.3s;
+  color: $grey-text;
+  width: 320px;
+  &:focus {
+    border-color: $blue-m-disabled;
+    font-weight: $fw-normal;
+  }
+  &:hover {
+    color: $blue-main;
+  }
+}
+
+.error {
+  background-color: $red-m-input;
+  border-color: $red-m-input-stroke;
+  color: $red-main;
+  &:hover {
+    color: $red-main;
+  }
+  &:focus {
+    color: $red-main;
+    border-color: $red-m-input-stroke;
+  }
+}

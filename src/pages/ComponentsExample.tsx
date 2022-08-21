@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Logo } from "../UI";
+import { Button, Input, Logo } from "../UI";
 import { Icon } from "../UI";
 import { icons } from "../UI/Icon/utils";
 import s from "./ComponentsExample.module.scss";
@@ -39,6 +39,9 @@ export const ComponentsExample = () => {
       <Button>
         Button <Icon variant="arrowRightFilled" fontSize={15} />
       </Button>
+
+      <Input error/>
+      <Input placeholder="email" type="email"/>
     </div>
   );
 };
