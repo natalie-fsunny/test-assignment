@@ -11,6 +11,7 @@
 }
 
 .icon {
+  display: inline-block;
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   font-style: normal;
@@ -59,4 +60,7 @@
 }
 .youtube:before {
   content: "\e90a";
+}
+.arrowRightFilled:before {
+  content: "\e90c";
 }

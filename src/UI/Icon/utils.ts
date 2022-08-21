@@ -11,4 +11,5 @@ export const icons = [
   "twitter",
   "vk",
   "youtube",
+  "arrowRightFilled",
 ] as string[];

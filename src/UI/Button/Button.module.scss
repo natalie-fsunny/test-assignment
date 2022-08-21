@@ -1,0 +1,67 @@
+@import "../../styles/style.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Myriad Pro";
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 48px;
+  font-weight: $fw-semi-bold;
+  font-size: $button1-desktop-tablet;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  width: 200px;
+  background-color: $blue-main;
+  &:active {
+    background-color: $blue-m-pressed;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: $blue-main 2px solid;
+  &:hover {
+    border: $blue-m-stroke 2px solid;
+  }
+  &:active {
+    background-color: $blue-m-pressed;
+  }
+  color: white;
+  font-size: 25px;
+}
+
+.error {
+  background-color: $red-main;
+  &:active {
+    background-color: $red-main-pressed;
+  }
+}
+
+.disabled {
+  background-color: $blue-m-disabled;
+  &:active {
+    background-color: $blue-m-disabled;
+  }
+}
+
+.default {
+  & span {
+    width: 0px;
+    transition: all ease-in-out 0.3s;
+    transform: translate(0px, 3px);
+    opacity: 0;
+  }
+  &:hover span {
+    width: 100%;
+    opacity: 1;
+    padding-left: 10px;
+  }
+}
