@@ -13,7 +13,7 @@ export const ComponentsExample = () => {
 
   return (
     <div>
-      <Header />
+     
       <Logo />
       <div>
         {icons.map((icon) => (
@@ -46,7 +46,7 @@ export const ComponentsExample = () => {
       <Input error/>
       <Input placeholder="email" type="email"/>
 
-      <Footer />
+      
     </div>
   );
 };
