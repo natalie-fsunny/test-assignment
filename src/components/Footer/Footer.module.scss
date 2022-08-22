@@ -3,7 +3,7 @@
 .footer {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   border-bottom: 10px solid $red-main;
   @include laptop-desktop {
     font-size: $body2-desktop-tablet;
@@ -22,7 +22,6 @@
 .container {
   display: flex;
   justify-content: space-between;
-
   @include laptop-desktop {
     margin: 0 165px;
     width: 100%;
@@ -118,7 +117,7 @@
   flex-direction: column;
   margin: 57px 0 40px 0;
   gap: 16px;
-  @include mobile-tablet {
+  @include mobile {
     margin: 24px 0;
   }
 }

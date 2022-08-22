@@ -1,0 +1,114 @@
+@import "../../styles/style.scss";
+
+.privacy {
+  background-color: $white-background;
+  color: $grey-text;
+  overflow-x: hidden;
+  @include desktop {
+    padding-top: 100px;
+  }
+  @include laptop {
+    padding-top: 88px;
+  }
+  @include tablet {
+    padding-top: 94px;
+  }
+  @include mobile {
+    padding-top: 48px;
+  }
+}
+
+.background {
+  @include mobile-tablet {
+    display: none;
+  }
+  img {
+    position: fixed;
+    transform: translate(60%, 40%);
+    width: 900px;
+    height: 900px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  @include laptop-desktop {
+    gap: 40px;
+  }
+  @include mobile-tablet {
+    gap: 20px;
+  }
+  @include desktop {
+    max-width: 1085px;
+  }
+  @include laptop {
+    max-width: 1015px;
+  }
+
+  @include laptop-desktop {
+    margin-left: 165px;
+    padding-bottom: 200px;
+
+  }
+  @include tablet {
+    margin: 0 32px;
+    padding-bottom: 120px;
+
+  }
+  @include mobile {
+    margin: 0 16px;
+    padding-bottom: 80px;
+
+  }
+}
+
+.section {
+  white-space: normal;
+  ul {
+    padding-left: 20px;
+  }
+}
+
+.subtitle {
+  margin: 16px 0;
+  color: $dark-text;
+  @include tablet-desktop {
+    font-size: $subtitle-desktop-tablet;
+  }
+  @include mobile {
+    font-size: $subtitle-mobile;
+  }
+}
+
+.h2 {
+  color: $dark-text;
+  font-weight: $fw-heavy;
+  @include laptop-desktop {
+    margin: 36px 0 56px 0;
+    font-size: $h2-desktop;
+  }
+  @include tablet {
+    margin: 32px 0 36px 0;
+    font-size: $h2-tablet;
+  }
+  @include mobile {
+    margin: 24px 0;
+
+    font-size: $h2-mobile;
+  }
+}
+
+.decoration {
+  background-color: $blue-background;
+  width: 100%;
+  @include laptop-desktop {
+    height: 568px;
+  }
+  @include tablet {
+    height: 495px;
+  }
+  @include mobile {
+    height: 326px;
+  }
+}

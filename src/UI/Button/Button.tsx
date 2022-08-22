@@ -3,7 +3,7 @@ import s from "./Button.module.scss";
 
 interface Props {
   children: React.ReactNode;
-  variant?: "circle" | "default";
+  variant?: "circle" | "default" | "text-right-arrow" | "text-left-arrow";
   onMouseEnter?: React.MouseEventHandler<HTMLButtonElement>;
   onMouseLeave?: React.MouseEventHandler<HTMLButtonElement>;
   onMouseDown?: React.MouseEventHandler<HTMLButtonElement>;
