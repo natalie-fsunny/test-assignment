@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Icon, Logo } from "../../UI";
 import s from "./Header.module.scss";
 

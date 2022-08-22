@@ -1,0 +1,145 @@
+@import "../../styles/style.scss";
+
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 10px solid $red-main;
+  @include laptop-desktop {
+    font-size: $body2-desktop-tablet;
+    height: 444px;
+  }
+  @include tablet {
+    font-size: $body2-desktop-tablet;
+    height: 446px;
+  }
+  @include mobile {
+    font-size: $body2-mobile;
+    height: 751px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  @include laptop-desktop {
+    margin: 0 165px;
+    width: 100%;
+  }
+  @include tablet {
+    margin: 0 32px;
+    width: 100%;
+  }
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 16px;
+    width: 100%;
+  }
+}
+
+.social_icons {
+  display: flex;
+  gap: 26px;
+  color: $grey-text;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include tablet {
+    width: 50%;
+  }
+  .social_icons {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.contacts {
+  font-weight: $fw-normal;
+  color: $dark-text;
+  line-height: 27px;
+}
+
+.menu {
+  ul {
+    font-weight: $fw-semi-bold;
+    color: $blue-main;
+    gap: 56px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 8px 0;
+    @include mobile-tablet {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
+
+.subtitle {
+  font-size: $subtitle-desktop-tablet;
+  margin: 8px 0;
+}
+
+.copyright {
+  color: $grey-description;
+  font-size: $copyright-desktop-tablet;
+  @include mobile {
+    font-size: $copyright-mobile;
+  }
+}
+
+.right {
+  @include tablet {
+    width: 50%;
+  }
+  .social_icons {
+    @include tablet {
+      display: none;
+    }
+    @include laptop-desktop {
+      display: flex;
+    }
+    @include mobile {
+      display: flex;
+    }
+  }
+}
+
+.subscribtion_form {
+  display: flex;
+  flex-direction: column;
+  margin: 57px 0 40px 0;
+  gap: 16px;
+  @include mobile-tablet {
+    margin: 24px 0;
+  }
+}
+
+.slogan {
+  color: $grey-text;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+  @include mobile-tablet {
+    flex-direction: column;
+    input,
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.description {
+  color: $grey-description;
+  font-size: $description-desktop-tablet;
+}

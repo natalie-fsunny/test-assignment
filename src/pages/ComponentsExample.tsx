@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Header } from "../components";
+import { Footer } from "../components/Footer";
 import { Button, Input, Logo } from "../UI";
 import { Icon } from "../UI";
 import { icons } from "../UI/Icon/utils";
@@ -44,6 +45,8 @@ export const ComponentsExample = () => {
 
       <Input error/>
       <Input placeholder="email" type="email"/>
+
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,9 @@
 @import "../../styles/style.scss";
 
 .input {
+  &::placeholder {
+    color: $grey-text;
+  }
   font-size: $body2-desktop-tablet;
   border: 2px solid $blue-m-input-stroke;
   padding: 16.5px 24px;
