@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./Icon.module.scss";
 import { icons } from "./utils";
+import cn from "classnames";
+import styles from "./Icon.module.scss";
 
 interface IIconProps {
   variant: typeof icons[number];
@@ -8,10 +9,12 @@ interface IIconProps {
 }
 
 export const Icon: React.FC<IIconProps> = ({ variant, fontSize = 20 }) => {
+  const iconClassName = cn(styles.icon, styles[variant]);
+
   return (
     <span
       style={{ fontSize: fontSize + "px" }}
-      className={styles.icon + " " + styles[variant]}
+      className={iconClassName}
     ></span>
   );
 };

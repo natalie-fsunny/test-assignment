@@ -1,4 +1,5 @@
 import React from "react";
+import cn from "classnames";
 import styles from "./Button.module.scss";
 
 interface IButtonProps {
@@ -21,19 +22,17 @@ export const Button: React.FC<IButtonProps> = ({
   variant = "default",
   ...props
 }) => {
+  const buttonClassName = cn(
+    styles.button,
+    styles[variant],
+    disabled ? styles.disabled : "",
+    error ? styles.error : ""
+  );
   return (
     <button
       type={type}
       disabled={disabled}
-      className={
-        styles.button +
-        " " +
-        styles[variant] +
-        " " +
-        (disabled ? styles.disabled : "") +
-        " " +
-        (error ? styles.error : "")
-      }
+      className={buttonClassName}
       {...props}
     >
       {children}

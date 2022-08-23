@@ -1,4 +1,5 @@
 import React from "react";
+import cn from "classnames";
 import styles from "./Input.module.scss";
 
 interface IInputProps {
@@ -14,9 +15,10 @@ export const Input: React.FC<IInputProps> = ({
   required = false,
   error = false,
 }) => {
+  const inputClassName = cn(styles.input, error ? styles.error : "");
   return (
     <input
-      className={styles.input + " " + (error ? styles.error : "")}
+      className={inputClassName}
       placeholder={placeholder}
       type={type}
       required={required}
