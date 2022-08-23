@@ -1,17 +1,17 @@
 import React from "react";
-import s from "./Icon.module.scss";
+import styles from "./Icon.module.scss";
 import { icons } from "./utils";
 
-interface Props {
+interface IIconProps {
   variant: typeof icons[number];
   fontSize?: number;
 }
 
-export const Icon: React.FC<Props> = ({ variant, fontSize = 20 }) => {
+export const Icon: React.FC<IIconProps> = ({ variant, fontSize = 20 }) => {
   return (
     <span
       style={{ fontSize: fontSize + "px" }}
-      className={s.icon + " " + s[variant]}
+      className={styles.icon + " " + styles[variant]}
     ></span>
   );
 };

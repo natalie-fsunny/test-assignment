@@ -2,15 +2,15 @@ import React from "react";
 import { Footer } from "../Footer";
 import { Header } from "../Header";
 
-import s from "./Layout.module.scss";
+import styles from "./Layout.module.scss";
 
-interface Props {
+interface ILayoutProps {
   children: React.ReactNode;
 }
 
-export const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
-    <div className={s.layout}>
+    <div className={styles.layout}>
       <Header />
       <main> {children}</main>
       <Footer />

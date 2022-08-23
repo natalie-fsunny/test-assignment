@@ -1,0 +1,69 @@
+@import "../../../styles/style.scss";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  @include laptop-desktop {
+    gap: 40px;
+  }
+  @include mobile-tablet {
+    gap: 20px;
+  }
+  @include desktop {
+    max-width: 1085px;
+  }
+  @include laptop {
+    max-width: 1015px;
+  }
+
+  @include laptop-desktop {
+    margin-left: 165px;
+    padding-bottom: 200px;
+  }
+  @include tablet {
+    margin: 0 32px;
+    padding-bottom: 120px;
+  }
+  @include mobile {
+    margin: 0 16px;
+    padding-bottom: 80px;
+  }
+  p {
+    margin: 24px 0;
+  }
+}
+
+.section {
+  white-space: normal;
+  ul {
+    padding-left: 20px;
+  }
+}
+
+.subtitle {
+  margin: 16px 0;
+  color: $dark-text;
+  @include tablet-desktop {
+    font-size: $subtitle-desktop-tablet;
+  }
+  @include mobile {
+    font-size: $subtitle-mobile;
+  }
+}
+
+.h2 {
+  color: $dark-text;
+  font-weight: $fw-heavy;
+  @include laptop-desktop {
+    margin: 20px 0 40px 0;
+    font-size: $h2-desktop;
+  }
+  @include tablet {
+    margin: 16px 0 20px 0;
+    font-size: $h2-tablet;
+  }
+  @include mobile {
+    margin: 8px 0 16px 0;
+    font-size: $h2-mobile;
+  }
+}

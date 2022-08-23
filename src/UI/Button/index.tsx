@@ -1,7 +1,7 @@
 import React from "react";
-import s from "./Button.module.scss";
+import styles from "./Button.module.scss";
 
-interface Props {
+interface IButtonProps {
   children: React.ReactNode;
   variant?: "circle" | "default" | "text-right-arrow" | "text-left-arrow";
   onMouseEnter?: React.MouseEventHandler<HTMLButtonElement>;
@@ -13,7 +13,7 @@ interface Props {
   type?: "submit" | "button";
 }
 
-export const Button: React.FC<Props> = ({
+export const Button: React.FC<IButtonProps> = ({
   children,
   disabled = false,
   error = false,
@@ -26,13 +26,13 @@ export const Button: React.FC<Props> = ({
       type={type}
       disabled={disabled}
       className={
-        s.button +
+        styles.button +
         " " +
-        s[variant] +
+        styles[variant] +
         " " +
-        (disabled ? s.disabled : "") +
+        (disabled ? styles.disabled : "") +
         " " +
-        (error ? s.error : "")
+        (error ? styles.error : "")
       }
       {...props}
     >

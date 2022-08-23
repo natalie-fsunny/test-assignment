@@ -1,14 +1,14 @@
 import React from "react";
-import s from "./Input.module.scss";
+import styles from "./Input.module.scss";
 
-interface Props {
+interface IInputProps {
   placeholder?: string;
   type?: "email" | "text";
   required?: boolean;
   error?: boolean;
 }
 
-export const Input: React.FC<Props> = ({
+export const Input: React.FC<IInputProps> = ({
   placeholder = "",
   type = "text",
   required = false,
@@ -16,7 +16,7 @@ export const Input: React.FC<Props> = ({
 }) => {
   return (
     <input
-      className={s.input + " " + (error ? s.error : "")}
+      className={styles.input + " " + (error ? styles.error : "")}
       placeholder={placeholder}
       type={type}
       required={required}

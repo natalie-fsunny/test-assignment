@@ -1,0 +1,60 @@
+@import "../../../styles/style.scss";
+
+.right {
+  @include tablet {
+    width: 50%;
+  }
+  .social_icons {
+    @include tablet {
+      display: none;
+    }
+    @include laptop-desktop {
+      display: flex;
+    }
+    @include mobile {
+      display: flex;
+    }
+  }
+}
+
+.subscribtion_form {
+  display: flex;
+  flex-direction: column;
+  margin: 57px 0 40px 0;
+  gap: 16px;
+  @include mobile {
+    margin: 24px 0;
+  }
+}
+
+.slogan {
+  color: $grey-text;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+  @include mobile-tablet {
+    flex-direction: column;
+    input,
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.description {
+  color: $grey-description;
+  font-size: $description-desktop-tablet;
+}
+
+.subtitle {
+  margin: 16px 0;
+  color: $dark-text;
+  @include tablet-desktop {
+    font-size: $subtitle-desktop-tablet;
+  }
+  @include mobile {
+    font-size: $subtitle-mobile;
+  }
+}

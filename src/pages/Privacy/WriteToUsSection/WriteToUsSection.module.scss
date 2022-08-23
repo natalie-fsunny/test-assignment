@@ -1,0 +1,129 @@
+@import "../../../styles/style.scss";
+
+.write_to_us {
+  position: relative;
+  overflow: hidden;
+  background-color: $blue-background;
+  width: 100%;
+  @include laptop-desktop {
+    height: 568px;
+  }
+  @include tablet {
+    height: 495px;
+    display: flex;
+    align-items: center;
+  }
+  @include mobile {
+    height: 326px;
+    display: flex;
+    align-items: center;
+  }
+  button {
+    @include tablet-desktop {
+      width: 220px;
+      margin-top: 48px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-top: 32px;
+    }
+  }
+}
+
+.write_to_us_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include desktop {
+    transform: translateY(-100px);
+    margin: 0 300px;
+  }
+  @include laptop {
+    transform: translateY(-50px);
+    margin: 0 165px;
+  }
+  @include tablet {
+    width: 100%;
+    margin: 0 32px;
+  }
+  @include mobile {
+    margin: 0 16px;
+    width: 100%;
+  }
+}
+
+.write_to_us_info {
+  z-index: 2;
+  font-size: $body1-desktop-tablet;
+  @include tablet-desktop {
+    width: 378px;
+  }
+  @include mobile {
+    width: 250px;
+    width: 100%;
+    font-size: $body1-mobile;
+  }
+}
+
+.bottom_center_ellipse {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -50%;
+  left: 50vw;
+  transform: translateX(-50%);
+  @include mobile {
+    display: none;
+  }
+}
+
+.top_right_ellipse {
+  transform: rotate(165deg);
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: -50%;
+  right: -450px;
+  @include tablet {
+    width: 457px;
+    height: 457px;
+    top: -40%;
+    right: -300px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.folder {
+  position: relative;
+  @include laptop {
+    width: 592px;
+    height: 592px;
+  }
+  @include tablet {
+    width: 339px;
+    height: 339px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.h2 {
+  color: $dark-text;
+  font-weight: $fw-heavy;
+  @include laptop-desktop {
+    margin: 20px 0 40px 0;
+    font-size: $h2-desktop;
+  }
+  @include tablet {
+    margin: 16px 0 20px 0;
+    font-size: $h2-tablet;
+  }
+  @include mobile {
+    margin: 8px 0 16px 0;
+    font-size: $h2-mobile;
+  }
+}

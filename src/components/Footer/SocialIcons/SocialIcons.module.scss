@@ -1,0 +1,14 @@
+@import "../../../styles/style.scss";
+
+.social_icons {
+  display: flex;
+  gap: 26px;
+  color: $grey-text;
+  span {
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      cursor: pointer;
+      color: $blue-main;
+    }
+  }
+}
