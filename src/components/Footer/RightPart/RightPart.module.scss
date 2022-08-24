@@ -45,7 +45,12 @@
 
 .description {
   color: $grey-description;
-  font-size: $description-desktop-tablet;
+  @include tablet-desktop {
+    font-size: $description-desktop-tablet;
+  }
+  @include mobile {
+    font-size: $description-mobile;
+  }
 }
 
 .subtitle {

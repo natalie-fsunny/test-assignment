@@ -1,0 +1,106 @@
+{
+  "translation": {
+    "header": {
+      "recruiting": "Recruiting",
+      "academy": "Academy",
+      "courses": "Courses",
+      "about_us": "About us",
+      "blog": "Blog",
+      "eng": "Eng"
+    },
+    "footer": {
+      "subscribe": "Subscribe",
+      "terms_conditions": "Terms & Conditions",
+      "privacy_policy": "Privacy Policy",
+      "Eesti_Töötukassa": "Eesti Töötukassa",
+      "subscribe_to_our_blog": "Subscribe to our blog",
+      "description": "By clicking the subscribe button, you agree receive the latest news of IT Talent",
+      "slogan": "Stay up to date with all the latest recruiting news",
+      "copyright": "© Copyright - IT TALENT"
+    },
+    "main": {
+      "back": "Back",
+      "privacy_policy_title": "PRIVACY POLICY",
+      "privacy_policy_content": {
+        "part1": "IT Talent OÜ follows the European data protection rules according to the General Data Protection Regulation (EU GDPR) when processing personal data.",
+        "part2": "To ensure the lawful processing of personal data, we meet the following conditions:",
+        "part3": {
+          "part3_1": "The data subject (employee, client, training participant) must consent to the processing of his or her personal data for one or more specific purposes.",
+          "part3_2": "We process personal data in order to fulfill an agreement entered into with the participation of the data subject.",
+          "part3_3": "The processing of personal data is necessary for the fulfillment of the legal obligation of the controller IT Talent OÜ."
+        }
+      },
+      "collecting_personal_data_title": "How we collect your personal data:",
+      "collecting_personal_data_content": {
+        "part1": {
+          "part1_1": "In particular, we use personal data that you have provided to us upon registration on the website or data that we have generated for us as a result of the company'styles activities or our service.",
+          "part1_2": "We receive personal data directly from you when you participate in our training. As well as, when you contact us through our website (by e-mail, letter, call or participate in a campaign organized by us).",
+          "part1_3": "If you represent our legal entity client, we will receive your personal data upon concluding the agreement or during the performance of the agreement. As a representative of our legal entity client, you can provide us with the personal data of your other representatives and/or training participants."
+        }
+      },
+      "purpose_of_collecting_personal_data_title": "Purpose of collection the personal data",
+      "purpose_of_collecting_personal_data_content": {
+        "part1": "The purpose of the processing of personal data collected by IT Talent OÜ is to comply with the requirements set by law (incl. The Adult Education Act) and to ensure the quality of training.",
+        "part2": "Personal data collected by IT Talent OÜ:",
+        "part3": {
+          "part3_1": "Name,",
+          "part3_2": "Personal identification code,",
+          "part3_3": "Telephone number,",
+          "part3_4": "Skype contact,",
+          "part3_5": "Telegram contact,",
+          "part3_6": "Email address,",
+          "part3_7": "Level of education,",
+          "part3_8": "Work experience."
+        }
+      },
+      "privacy_principles_title": "Our Privacy Policy Principles:",
+      "privacy_principles_content": {
+        "part1": {
+          "part1_1": "We only collect relevant and necessary personal information. When collecting personal data, we proceed from the purpose of the processing of personal data, ie we do not collect more personal data than necessary.",
+          "part1_2": "We store personal data in a form that allows the identification of data subjects only for as long as it is necessary to fulfill the purpose for which the personal data is processed.",
+          "part1_3": "We monitor the accuracy of personal data and, if necessary, supplement, delete, or correct any personal data that is incorrect from the point of view of the purpose of processing.",
+          "part1_4": "We process personal data reliably and securely. The processing is lawful, fair, and transparent to the data subject.",
+          "part1_5": "We choose our partners carefully. We require and expect our contractual partners to be careful and ethical in the processing of personal data and to keep personal data secure. Our clients can be both legal entities and individuals."
+        },
+        "part2": "We process personal data as both a controller and an authorized processor. As the controller, we determine the purposes and means of processing personal data ourselves. As an authorized processor, we follow the written instructions of the controller when processing personal data. As an authorized processor, we process personal data in accordance with the written instructions arising from the data processing agreement entered into with our legal entity client."
+      },
+      "storing_personal_data_title": "For how long we store personal data?",
+      "storing_personal_data_content": {
+        "part1": "We retain personal data for as long as it is required and permitted by law or necessary to achieve the purposes stated in the Data Protection Rules. We store personal data for at least three years. Upon expiration of the term of storage of personal data, we will permanently delete personal data."
+      },
+      "data_subject_rights_title": "Data subject rights",
+      "data_subject_rights_content": {
+        "part1": "The data subject has the right to apply to IT Talent OÜ pursuant to law:",
+        "part2": {
+          "part2_1": "the right to request information on which personal data concerning the data subject IT Talent OÜ processes;",
+          "part2_2": "the right to access personal data;",
+          "part2_3": "the right to request the rectification or erasure of personal data;",
+          "part2_4": "if there are grounds provided for in legislation, the right to demand a restriction on the processing of personal data or to submit objections to the processing of personal data;",
+          "part2_5": "the right to request the transfer of personal data;",
+          "part2_6": "the right not to be the subject of a decision based on automated processing."
+        }
+      },
+      "deletion_data_title": "We delete the collected personal data as soon as:",
+      "deletion_data_content": {
+        "part1": {
+          "part1_1": "Personal data are no longer needed for the purpose for which we collected them;",
+          "part1_2": "The data subject withdraws the consent given for processing;",
+          "part1_3": "The data subject objects to the processing of personal data;",
+          "part1_4": "We have processed personal data illegally;",
+          "part1_5": "The law requires it."
+        }
+      },
+      "reporting_title": "Reporting about the personal data breach",
+      "reporting_content": {
+        "part1": "In the event of a personal data breach, please report immediately by email at info@ittalent.ee or call +372 506 0627. We take the issue of personal data security seriously and react immediately to any violation."
+      },
+      "solving_disagreements_title": "Solving Disagreements",
+      "solving_disagreements_content": {
+        "part1": "The parties shall endeavor to resolve any disagreements through negotiations. If the dispute could not be resolved through negotiations, the parties may apply to the Harju County Court. The natural person client who does not enter into the agreement in his or her economic and professional activities may also file a complaint with the Consumer Protection and Technical Regulatory Authority in the event of a violation of his or her rights. It is also possible for a data subject to request assistance from the Data Protection Inspectorate in exercising his or her rights."
+      },
+      "write_to_us_button": "Write to us",
+      "write_to_us_title": "IDEAS FOR COOPERATION",
+      "write_to_us_content": "We are always open to all interesting proposals and are ready to discuss them personally with you. Just write to us"
+    }
+  }
+}
