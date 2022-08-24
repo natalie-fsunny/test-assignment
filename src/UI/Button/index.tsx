@@ -12,6 +12,7 @@ interface IButtonProps {
   disabled?: boolean;
   error?: boolean;
   type?: "submit" | "button";
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const Button: React.FC<IButtonProps> = ({

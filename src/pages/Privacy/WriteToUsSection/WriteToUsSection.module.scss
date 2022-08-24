@@ -9,12 +9,12 @@
     height: 568px;
   }
   @include tablet {
-    height: 495px;
+    min-height: 495px;
     display: flex;
     align-items: center;
   }
   @include mobile {
-    height: 326px;
+    min-height: 326px;
     display: flex;
     align-items: center;
   }

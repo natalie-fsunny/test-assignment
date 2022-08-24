@@ -1,21 +1,23 @@
 @import "../../styles/style.scss";
 
 .footer {
+  position: relative;
+  bottom: 0;
   display: flex;
   align-items: center;
   width: 100vw;
   border-bottom: 10px solid $red-main;
   @include laptop-desktop {
     font-size: $body2-desktop-tablet;
-    height: 444px;
+    min-height: 444px;
   }
   @include tablet {
     font-size: $body2-desktop-tablet;
-    height: 446px;
+    min-height: 446px;
   }
   @include mobile {
     font-size: $body2-mobile;
-    height: 751px;
+    min-height: 751px;
   }
 }
 
@@ -38,6 +40,3 @@
     width: 100%;
   }
 }
-
-
-
