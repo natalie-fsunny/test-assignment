@@ -21,6 +21,7 @@
 }
 
 .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   @include laptop-desktop {
@@ -37,5 +38,22 @@
     gap: 32px;
     margin: 0 16px;
     width: 100%;
+  }
+}
+
+.up_button {
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+  bottom: 330px;
+  right: 0px;
+  opacity: 1;
+  @include mobile-tablet {
+    display: none;
+  }
+}
+.hidden_up_button {
+  opacity: 0;
+  @include mobile-tablet {
+    display: none;
   }
 }

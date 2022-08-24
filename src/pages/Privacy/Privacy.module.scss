@@ -31,19 +31,12 @@
   height: 900px;
 }
 
-.up_button {
-  position: fixed;
-  transition: all ease-in-out 0.3s;
-  bottom: 110px;
-  right: 50px;
-  opacity: 1;
-}
-.hidden_up_button {
-  opacity: 0;
-}
-
 .chat_button {
   position: fixed;
-  bottom: 30px;
-  right: 50px;
+  bottom: 100px;
+  right: 165px;
+  z-index: 2;
+  @include mobile-tablet {
+    display: none;
+  }
 }
