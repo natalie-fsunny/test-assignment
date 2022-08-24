@@ -1,3 +1,11 @@
+# Тестовое задание
+
+[Описание тестового задания](https://sponge-clover-df7.notion.site/ae382fea1240470f9cc1304f1e4f098d)
+
+Инструкция для запуска расположена ниже
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
