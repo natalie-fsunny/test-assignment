@@ -6,7 +6,7 @@
   background-color: $blue-background;
   width: 100%;
   @include laptop-desktop {
-    height: 568px;
+    min-height: 568px;
   }
   @include tablet {
     min-height: 495px;
@@ -36,11 +36,9 @@
   justify-content: space-between;
 
   @include desktop {
-    transform: translateY(-100px);
     margin: 0 300px;
   }
   @include laptop {
-    transform: translateY(-50px);
     margin: 0 165px;
   }
   @include tablet {
